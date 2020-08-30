@@ -1,8 +1,6 @@
 import React from 'react';
 
 const Header = (props) => {
-    console.log(props.title);
-
     let titleItem =  props.title.map((title, index) => {
         let classes = ['list-group-item'];
 
