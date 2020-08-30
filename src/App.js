@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Question from './components/Question';
 import Answer from './components/Answer';
 import About from './components/About';
+import birdsData from './store/state';
 
 function App() {
 

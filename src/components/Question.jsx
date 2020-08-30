@@ -15,7 +15,7 @@ const Question = (props) => {
                 </div>
 
                 </div>
-                <div className ="col-8 textbox">
+                <div className ="col-8 ly-4 lx-4 textbox">
                     <h2> {props.info} </h2>
                     <div className = "player-box d-flex">
                         <audio controls = "true" preload="auto" src= {props.audio}>
