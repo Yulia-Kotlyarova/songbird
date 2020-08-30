@@ -1,3 +1,8 @@
+$main: #292836;
+$second:#494856;
+$text: #C1CEDA;
+$topic:#52A08D;
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +10,58 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    min-height: 100%;
+    background-color: $main;
+    color:$text ;
   }
   
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
+  }
+
+  .header {
+    h1 {
+      color: $text;
+      span {
+        color:$topic;
+      }
+    }
+    li {
+      background-color:  $second!important;
+    }
+    ul {
+      width: 100%;
+    }
+  }
+
+ 
+  .question-box,
+  .about-box {
+    background-color:  $second;
+    border-radius: 0.25rem;
+
+    .pic-box {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 74%;
+      border-radius: 0.25rem;
+      margin: 1.25rem;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .answer-box {
+    li {
+      background-color:  $second!important;
+    }
   }

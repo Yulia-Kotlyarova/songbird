@@ -3,10 +3,55 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  min-height: 100%;
+  background-color: #292836;
+  color: #C1CEDA;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.header h1 {
+  color: #C1CEDA;
+}
+.header h1 span {
+  color: #52A08D;
+}
+.header li {
+  background-color: #494856 !important;
+}
+.header ul {
+  width: 100%;
+}
+
+.question-box,
+.about-box {
+  background-color: #494856;
+  border-radius: 0.25rem;
+}
+.question-box .pic-box,
+.about-box .pic-box {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 74%;
+  border-radius: 0.25rem;
+  margin: 1.25rem;
+  overflow: hidden;
+}
+.question-box .pic-box img,
+.about-box .pic-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.answer-box li {
+  background-color: #494856 !important;
 }
 
 /*# sourceMappingURL=index.css.map */
