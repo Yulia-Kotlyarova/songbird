@@ -2,6 +2,8 @@ $main: #292836;
 $second:#494856;
 $text: #C1CEDA;
 $topic:#52A08D;
+$wrong:#9e4950;
+$right:#326d5e;
 
 body {
     margin: 0;
@@ -45,7 +47,7 @@ body {
       position: relative;
       width: 100%;
       height: 0;
-      padding-top: 74%;
+      padding-top: 65%;
       border-radius: 0.25rem;
       margin: 1.25rem;
       overflow: hidden;
@@ -63,6 +65,17 @@ body {
   .answer-box {
     li {
       background-color:  $second!important;
+      cursor: pointer;
+      transition: 0.4s;
+      &:hover {
+        background-color: #555463!important;
+      }
+    }
+    .right {
+      background-color: $right!important;
+    }
+    .wrong {
+      background-color: $wrong!important;
     }
   }
 
@@ -90,7 +103,7 @@ body {
       position: relative;
       width: 100%;
       height: 0;
-      padding-top: 74%;
+      padding-top: 65%;
       border-radius: 0.25rem;
       overflow: hidden;
       img {
